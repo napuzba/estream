@@ -1,0 +1,21 @@
+<div class="filter">
+    <select (change)='onFilterDateChange($event)'>
+        <option value="0">All</option>
+        <option *ngFor="let date of events.dates();" [value]=date.hash() > {{ date.str() }} </option>
+    </select>
+
+
+</div>
+
+<table class='events'>
+    <tr>
+      <th>Name</th>
+      <th>Count</th>
+    </tr>
+    <ng-container *ngFor="let ec of events.all();">
+        <tr  *ngIf="ec.count > 0" >
+        <td>{{ ec.name  }}</td>
+        <td>{{ ec.count }}</td>
+        </tr>
+    </ng-container>
+  </table>

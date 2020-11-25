@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EventCountersComponent } from './components/event-counters/event-counters.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EventCountersComponent
   ],
   imports: [
     BrowserModule,

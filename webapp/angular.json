@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "estream"
+  "defaultProject": "estream",
+  "cli": {
+    "analytics": "26d4ee87-0454-45c9-a9ce-003a494ac00c"
+  }
 }
