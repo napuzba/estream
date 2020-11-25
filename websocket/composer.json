@@ -1,0 +1,19 @@
+{
+    "name": "estream/estream",
+    "description": "Event logger",
+    "type": "project",
+    "require": {
+        "cboden/ratchet": "^0.4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kobi",
+            "email": "kobi@napuzba.com"
+        }
+    ]
+}
