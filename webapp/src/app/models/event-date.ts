@@ -21,7 +21,7 @@ export class EventDate {
     public str() {
         let year  = (this._date.getFullYear() ).toString();
         let month = (1 + this._date.getMonth()).toString().padStart(2,'0');
-        let day   = (1 + this._date.getDay()  ).toString().padStart(2,'0');
+        let day   = (1 + this._date.getDate()  ).toString().padStart(2,'0');
         return `${year}-${month}-${day}`;
     }
     private _date : Date ;

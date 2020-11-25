@@ -11,8 +11,9 @@ export class EventCountersComponent implements OnInit,OnDestroy {
   constructor() { }
 
   ngOnInit(): void {
+    
+    this.generate(1000);
     /*
-    this.generate(100);
     this._idGenerate = window.setInterval(
       () => this.generate(helpers.random(1,25)), 1000
     )
@@ -21,7 +22,9 @@ export class EventCountersComponent implements OnInit,OnDestroy {
       () => this.generate1(helpers.random(1,25)), 1000
     );
     this.conn = new WebSocket('ws://localhost:8080');
-    this.conn.onopen = () => { console.log("Connection established!") };
+    this.conn.onopen = () => { 
+        console.log("Connection established!") 
+    };
     this.conn.onmessage = (ee: any) => {
       console.log(ee.data);
       return this.events.add( 'Event' + (ee.data.toString().padStart(2,'0')) , new Date() );
